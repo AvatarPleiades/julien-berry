@@ -49,7 +49,7 @@
         </div>
         <div class="languages-used">
             <h2 class="second-title">Langages utilisés et autres liens</h2>
-            <p><?php echo $processus ?></p>
+            <p>Pour réaliser ce projet, j'ai eu recours à ces langages:</p>
         </div>
     </div>
 </div>

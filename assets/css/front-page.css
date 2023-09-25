@@ -370,65 +370,9 @@ button:hover .button-text {
   font-size: 13px;
 }
 
-/* Icônes des elements */
 .hero-content {
   display: flex;
   align-items: center;
-}
-
-.element-icon {
-  position: absolute;
-  height: 100px;
-  z-index: 1;
-  opacity: 0.5; /* Opacité par défaut */
-  transition: opacity 0.3s;
-  cursor: pointer;
-}
-
-.element-icon:hover {
-  opacity: 1; /* Opacité au survol */
-}
-
-.earth-element {
-  top: 42vh;
-  left: 30px;
-}
-
-.water-element {
-  top: 42vh;
-  right: 30px;
-}
-
-.earth-element-container {
-  display: flex;
-  align-items: center;
-}
-
-.water-element-container {
-  display: flex;
-  align-items: center;
-}
-
-.earth-demo-text {
-  margin-top: -575px;
-  margin-left: 120px;
-  font-family: 'Montserrat-Regular';
-  font-size: 14px;
-  color: #ffffff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-.water-demo-text {
-  margin-top: -575px;
-  margin-left: 990px;
-  font-family: 'Montserrat-Regular';
-  font-size: 14px;
-  color: #ffffff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
-  text-transform: uppercase;
-  white-space: nowrap;
 }
 
 /* Images Comparaison Slider */
@@ -541,45 +485,6 @@ button:hover .button-text {
 .flag-icon {
   width: 30px;
   height: 20px;
-}
-
-/* Hero élément feu */
-.fire-hero {
-  width: 100%;
-  height: 30vh;
-}
-
-.fire-hero img {
-  width: 100%;
-  height: 30vh;
-  border-top: 1px solid #4F518C;
-  border-bottom: 1px solid #4F518C;
-  object-fit: cover;
-}
-
-.fire-element {
-  top: 273.5vh;
-  left: 30px;
-}
-
-.fire-element-container {
-  display: flex;
-  align-items: center;
-}
-
-.fire-demo-text {
-  margin-top: -210px;
-  margin-left: 120px;
-  font-family: 'Montserrat-Regular';
-  font-size: 14px;
-  color: #ffffff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-.container-fire {
-  margin-bottom: 5vh;
 }
 
 /* Portfolio */

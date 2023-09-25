@@ -48,14 +48,6 @@
         <div class="hero-image">
             <img src="<?php echo get_theme_file_uri() . '/assets/images/hero.png'; ?>" alt="Hero du site">
         </div>
-        <div class="earth-element-container">
-            <img onclick="EarthtypeWriter()" class="element-icon earth-element" src="<?php echo get_theme_file_uri() . '/assets/images/earth-element.png'; ?>" alt="Element terre">
-            <div id="demo" class="earth-demo-text"></div>
-        </div>
-        <div class="water-element-container">
-            <img onclick="WatertypeWriter()" class="element-icon water-element" src="<?php echo get_theme_file_uri() . '/assets/images/water-element.png'; ?>" alt="Element eau">
-            <div id="demo-water" class="water-demo-text"></div>
-        </div>
     </div>
     <div id="apropos" class="container-about-me">
         <h1 class="first-title fancy">À propos</h1>
@@ -182,15 +174,6 @@
             <img class="flag-icon" src="<?php echo get_theme_file_uri() . '/assets/images/united-icon.png'; ?>" title="Parle un Anglais scolaire"alt="Drapeau du Royaume-Uni"> Scolaire<br>
             <img class="flag-icon" src="<?php echo get_theme_file_uri() . '/assets/images/german-icon.png'; ?>" title="Parle un Allemand scolaire"alt="Drapeau Allemand"> Scolaire
             </p>
-        </div>
-    </div>
-    <div class="container-fire">
-        <div class="fire-hero">
-            <img src="<?php echo get_theme_file_uri() . '/assets/images/fire-hero.png'; ?>" alt="Hero élément du feu">
-        </div>
-        <div class="fire-element-container">
-            <img onclick="FiretypeWriter()" class="element-icon fire-element" src="<?php echo get_theme_file_uri() . '/assets/images/fire-element.png'; ?>" alt="Element feu">
-            <div id="demo-fire" class="fire-demo-text"></div>
         </div>
     </div>
     <div id="portfolio" class="container-portfolio">
