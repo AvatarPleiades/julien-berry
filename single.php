@@ -38,21 +38,29 @@
     <div class="container-details-process">
         <div class="project-details">
             <h2 class="second-title">Détails du projet</h2>
-            <p><?php echo $details ?></p>
+            <div class="paragraph-content">
+                <p class="size"><?php echo $details ?></p>
+            </div>
         </div>
         <div class="project-process">
             <h2 class="second-title">Processus de réalisation du projet</h2>
-            <p><?php echo $processus ?></p>
+            <div class="paragraph-content">
+                <p class="size"><?php echo $processus ?></p>
+            </div>
         </div>
     </div>
     <div class="container-maquette-languages">
         <div class="maquette-cert">
             <h2 class="second-title">Maquettes et certificats</h2>
-            <a href="<?php echo ($maquette_url) ?>"><p class="text-align"><?php echo $titre_maquette ?></p></a>
+            <div class="paragraph-content">
+                <a href="<?php echo ($maquette_url) ?>"><p class="text-align size"><?php echo $titre_maquette ?></p></a>
+            </div>
         </div>
         <div class="languages-used">
             <h2 class="second-title">Langages utilisés et autres liens</h2>
-            <p>Pour réaliser ce projet, j'ai eu recours à ces langages:</p>
+            <div class="paragraph-content">
+                <p class="size">Pour réaliser ce projet, j'ai eu recours à ces langages:</p>
+            </div>
         </div>
     </div>
 </div>

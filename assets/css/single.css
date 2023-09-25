@@ -25,7 +25,7 @@
 }
 
 /* Partie details, processus */
-.container-details-process {
+.container-details-process, .container-maquette-languages {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,40 +34,27 @@
     margin-bottom: 5vh;
 }
 
-.project-details, .project-process {
+.project-details, .project-process, .maquette-cert, .languages-used {
     padding: 5px;
     width: 44vw;
-    height: 40vh;
+    height: 80vh;
     background-color: #ffffff;
     border-radius: 5px;
     border: 1px solid #4F518C;
-    box-shadow: 5px 5px 5px -2px #62626387; 
 }
 
-.project-details:hover, .project-process:hover {
-    box-shadow: none;
-}
-
-  /* Partie maquette, certificat, langages */
-  .container-maquette-languages {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+.project-details:hover, .project-process:hover, .maquette-cert:hover, .languages-used:hover {
+    scale: 1.01;
 }
 
 .maquette-cert, .languages-used {
-    padding: 5px;
-    width: 44vw;
     height: 40vh;
-    background-color: #ffffff;
-    border-radius: 5px;
-    border: 1px solid #4F518C;
-    box-shadow: 5px 5px 5px -2px #62626387; 
 }
 
-.maquette-cert:hover, .languages-used:hover {
-    box-shadow: none;
+.paragraph-content {
+    padding: 20px;
+}
+
+.paragraph-content p {
+    font-size: 16px;
 }
