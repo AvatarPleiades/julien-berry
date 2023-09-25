@@ -368,6 +368,7 @@ button:hover .button-text {
   margin-top: 5px;
   font-family: monospace;
   font-size: 13px;
+  color: #ffffff;
 }
 
 .hero-content {
@@ -548,8 +549,16 @@ p {
   margin-bottom: 2vh;
 }
 
+.margin-top {
+  margin-top: 1vh;
+}
+
 .text-align {
   text-align: center;
+}
+
+.white {
+  color: #ffffff;
 }
 
 /* Swiper.js */
