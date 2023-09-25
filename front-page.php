@@ -2,48 +2,7 @@
 
 <div class="container">
         <div id="accueil" class="hero-content">
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <h1>Julien Berry</h1>
-                        <p>Développeur WordPress</p>
-                        <img  class="photo-julien" src="<?php echo get_theme_file_uri() . '/assets/images/photojulien.png'; ?>" alt="Photo de Julien">
-                        <p> Me contacter <i class="fas fa-chevron-right fa-little-icon"></i></p>
-                    </div>
-                    <div class="flip-card-back">
-                        <h1 class="white">Contact</h1>
-                        <p class="white">Mes différents réseaux</p>
-                        <div class="icon-group">
-                            <div class="tooltip">
-                                <span class="tooltiptext">LinkedIn de Julien Berry</span>
-                            <i class="fab fa-linkedin-in fa-icon"></i>
-                            </div>
-                            <div class="tooltip">
-                                <span class="tooltiptext">GitHub de Julien Berry</span>
-                            <a href="https://github.com/AvatarPleiades" alt="GitHub de Julien Berry"><i class="fab fa-github fa-icon"></i></a>
-                            </div>
-                        </div>
-                        <div class="icon-group">
-                            <div class="tooltip">
-                                <span class="tooltiptext">X de Julien Berry</span>
-                            <i class="fab fa-twitter fa-icon"></i>
-                            </div>
-                            <div class="tooltip">
-                                <span class="tooltiptext">Mail de Julien Berry</span>
-                            <a href="mailto:berry.julien57@gmail.com" title="Envoyez-moi un e-mail"><i class="far fa-envelope fa-icon"></i></a>
-                            </div>
-                        </div>
-                        <div>
-                            <button class="contact-me">
-                                <span class="circle" aria-hidden="true">
-                                    <span class="icon arrow"></span>
-                                </span>
-                                <a href="#contact"><span class="button-text">Me contacter</span></a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php get_template_part('/templates-part/flip-card'); ?>
         </div>
         <div class="hero-image">
             <img src="<?php echo get_theme_file_uri() . '/assets/images/hero.png'; ?>" alt="Hero du site">
@@ -64,24 +23,7 @@
             <p>Suite à cela, je décide avec un ami de prendre quelques mois pour parcourir la France à pied avec une charrette à la rencontre de projets et d'entreprises écologiques/alternatives/éthiques.</p>
             <p>Dans le but des les interviewer et ainsi comprendre leur démarche et les partager au plus grand nombre à travers notre page l'Éveil Nomade sur <a href="https://www.facebook.com/eveilnomade" title="Page Facebook de l'Éveil Nomade" alt="Facebook de l'Éveil Nomade"><i class="fas fa-link link-deco"></i> Facebook</a>.</p>
             <p>Au passage, nous ramasserons au moins 1 sac de déchets par jour au bord des routes.</p>
-            <div class="slider-container">
-                <div class="img-comp-container">
-                    <div class="img-comp-img">
-                        <img src="<?php echo get_theme_file_uri() . '/assets/images/charette-eveilnomade.jpg'; ?>" title="Sur une route le long de la Garonne" alt="Photo de la charrette l'éveil nomade" width="300" height="200">
-                    </div>
-                    <div class="img-comp-img img-comp-overlay">
-                        <img src="<?php echo get_theme_file_uri() . '/assets/images/journal-eveilnomade.jpg'; ?>" title="Notre passage dans le journal" alt="Photo de l'éveil nomade dans le journal" width="300" height="200">
-                    </div>
-                </div>
-                <div class="img-comp-container">
-                    <div class="img-comp-img">
-                        <img src="<?php echo get_theme_file_uri() . '/assets/images/epicerie-eveilnomade.jpg'; ?>" title="Découverte du Marché Locale à Montpellier" alt="Photo de l'éveil nomade dans une épicerie" width="300" height="200">
-                    </div>
-                    <div class="img-comp-img img-comp-overlay">
-                        <img src="<?php echo get_theme_file_uri() . '/assets/images/pont-eveilnomade.jpg'; ?>" title="La traverse d'un pont avec notre charrette faîte mains" alt="Photo de l'éveil nomade sur un pont" width="300" height="200">
-                    </div>
-                </div>
-            </div><br>
+            <?php get_template_part('/templates-part/image-slider'); ?>
             <p>Cette aventure renforça mon lien avec la nature et ma foi en l'humanité.</p>
             <p>Suite à cela je décide de travailler au Luxembourg dans les magasins cactus pour pouvoir par la suite faire la côte Ouest du Canada et des États-Unis en van.</p>
             <p>De retour en France, je trouve une place dans une entreprise de maraîchage bio, puis en tant que vendeur dans leur magasin à Kanfen.</p>
@@ -90,78 +32,7 @@
             </div>
             <div data-aos="flip-right" data-aos-offset="200" data-aos-duration="750" data-aos-easing="ease-in-sine" class="my-carreer">
                 <h2 class="second-title">Mon parcours Pro</h2>
-                <div class="timeline">
-                    <div class="container-timeline left">
-                        <div class="content">
-                        <h3> Sept. 2021 - Jan. 2022</h3>
-                        <p>Magasin BIO L'Arpent Vert - Vendeur</p>
-                        <ul>
-                        <p>
-                        <li>Ouverture, fermeture et vente au magasin</li>
-                        <li>Suivi des stocks et commandes</li>
-                        <li>Réception des producteurs et de leurs livraisons</li>
-                        </p>
-                        </div>
-                    </div>
-                    <div class="container-timeline right">
-                        <div class="content">
-                            <h3>Juin 2021 - Jan. 2022</h3>
-                            <p>GAEC L'Arpent Vert - Maraîcher</p>
-                            <ul>
-                            <p>
-                            <li>Plantation, récolte, entretien</li>
-                            <li>Préparation de commandes</li>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="container-timeline left">
-                        <div class="content">
-                        <h3>Nov. 2019 - Fév. 2020</h3>
-                            <p>Picard - Employé Polyvalent</p>
-                            <p>
-                            <ul>
-                            <li>Vente en caisse</li>
-                            <li>Mise en Rayon et suivi des stocks</li>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="container-timeline right">
-                        <div class="content">
-                        <h3>Juin 2019 - Nov. 2019</h3>
-                            <p>GAEC L'Arpent Vert - Maraîcher</p>
-                            <p>
-                            <ul>
-                            <li>Plantation, récolte, entretien</li>
-                            <li>Préparation de commandes</li>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="container-timeline left">
-                        <div class="content">
-                            <h3>Fév. 2018 - Nov. 2018</h3>
-                            <p>Field § Concept - Employé de rayon</p>
-                            <ul>
-                            <p>
-                            <li>Mise en Rayon dans les supermarchés Cactus Luxembourg</li>
-                            <li>Suivi des stocks et commandes</li>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="container-timeline right">
-                        <div class="content">
-                            <h3>Sept. 2013 - Août 2016</h3>
-                            <p>La Poste - Guichetier, Livreur</p>
-                            <p>
-                            <ul>
-                            <li>Déchargement et tri des colis à la réception</li>
-                            <li>Mise en place des dépôts facteurs</li>
-                            <li>Collecte des différents bureaux «La Poste» du secteur</li>
-                            <li>Gestion de guichet auprès des professionnels</li>
-                            </ul>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <?php get_template_part('/templates-part/timeline'); ?>
             </div>
         </div>
     </div>
@@ -187,49 +58,7 @@
         <div data-aos="zoom-in-up" data-aos-duration="750" data-aos-offset="200" data-aos-easing="ease-in-sine" class="container-projects">
             <h2 class="second-title">Les Projets OpenClassrooms</h2>
             <p>Retrouvez dans ce slider tous les projets réalisés lors de la formation de Développeur WordPress chez OpenClassrooms.</p>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="<?php echo get_theme_file_uri('/assets/images/projets/julien-berry-view.png'); ?>">
-                </div>
-                <div class="swiper-slide">
-                    <img src="<?php echo get_theme_file_uri('/assets/images/projets/emoving-view.png'); ?>">
-                </div>
-                <div class="swiper-slide">
-                    <img src="<?php echo get_theme_file_uri('/assets/images/projets/mota-view.png'); ?>">
-                </div>
-                <div class="swiper-slide">
-                    <img src="<?php echo get_theme_file_uri('/assets/images/projets/medit-view.png'); ?>">
-                </div>
-                <div class="swiper-slide">
-                    <img src="<?php echo get_theme_file_uri('/assets/images/projets/koukaki-view.png'); ?>">
-                </div>
-                <div class="swiper-slide">
-                    <img src="<?php echo get_theme_file_uri('/assets/images/projets/printit-view.png'); ?>">
-                </div>
-                <div class="swiper-slide">
-                    <img src="<?php echo get_theme_file_uri('/assets/images/projets/chic-dressing-view.png'); ?>">
-                </div>
-                <div class="swiper-slide">
-                    <img src="<?php echo get_theme_file_uri('/assets/images/projets/planty-view.png'); ?>">
-                </div>
-                <div class="swiper-slide">
-                    <img src="<?php echo get_theme_file_uri('/assets/images/projets/the-artbox-view.png'); ?>">
-                </div>
-                <div class="swiper-slide">
-                    <img src="<?php echo get_theme_file_uri('/assets/images/projets/simpl-vintage-view.png'); ?>">
-                </div>
-                <div class="swiper-slide">
-                    <img src="<?php echo get_theme_file_uri('/assets/images/projets/booki-view.png'); ?>">
-                </div>
-                <div class="swiper-slide">
-                    <img src="<?php echo get_theme_file_uri('/assets/images/projets/riding-cities-view.png'); ?>">
-                </div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-            </div>
+            <?php get_template_part('/templates-part/swiper-project'); ?>
             <div>
                 <button class="all-projects type margin-bottom">
                     <span class="circle" aria-hidden="true">
@@ -260,12 +89,7 @@
             </div>
         </div>
     </div>
-    <div data-aos="flip-down" class="container-icons">
-        <i class="fab fa-linkedin-in bottom-icon"></i>
-        <a href="https://github.com/AvatarPleiades" title="GitHub de Julien Berry" alt="GitHub de Julien Berry"><i class="fab fa-github bottom-icon"></i></a>
-        <i class="fab fa-twitter bottom-icon"></i>
-        <a href="mailto:berry.julien57@gmail.com" title="Envoyez-moi un e-mail"><i class="far fa-envelope bottom-icon"></i></a>
-    </div>
+    <?php get_template_part('/templates-part/social-icon'); ?>
 </div>
 
 <?php get_footer(); ?>
