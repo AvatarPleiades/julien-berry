@@ -2,8 +2,10 @@
 
 <?php 
 // Champs ACF
+    $name = get_field('nom');
     $details = get_field('details'); 
     $processus = get_field('processus');
+    $num = get_field('num');
     $titre_maquette = get_field('titre_maquette');
 	$maquette_url = get_field('lien_maquette');
     $titre_lien = get_field('titre_lien'); 
@@ -24,14 +26,15 @@
 
 <div class="container-single">
     <div class="title-description">
-        <h1 class="first-title"><?php  echo get_the_title(get_post_thumbnail_id()) ?></h1>
+        <h1><?php  echo get_the_title(get_post_thumbnail_id()) ?></h1>
+        <h3 class="second-title margin-bottom"><?php echo $name ?></h2>
     </div>
     <div class="container-img">
         <img class ="single-photo" src="<?php echo $tablette_url ?>" alt="<?php the_title_attribute(); ?>">
         <img class ="single-photo" src="<?php echo $desktop_url ?>" alt="<?php the_title_attribute(); ?>">
         <img class ="single-photo" src="<?php echo $mobile_url ?>" alt="<?php the_title_attribute(); ?>">
     </div>
-    <p class="text-align">Projet de la formation "Développeur WordPress" d'OpenClassrooms</p>
+    <p class="text-align">Projet <?php echo $num ?> de la formation "Développeur WordPress" d'OpenClassrooms</p>
     <div class="container-details-process">
         <div class="project-details">
             <h2 class="second-title">Détails du projet</h2>

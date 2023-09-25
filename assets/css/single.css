@@ -5,9 +5,10 @@
 
 .title-description {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 5vh;
+    margin-top: 10vh;
 }
 
 /* Partie images */
@@ -37,8 +38,9 @@
     padding: 5px;
     width: 44vw;
     height: 40vh;
-    background-color: #DBDCFF;
+    background-color: #ffffff;
     border-radius: 5px;
+    border: 1px solid #4F518C;
     box-shadow: 5px 5px 5px -2px #62626387; 
 }
 
@@ -60,8 +62,9 @@
     padding: 5px;
     width: 44vw;
     height: 40vh;
-    background-color: #DBDCFF;
+    background-color: #ffffff;
     border-radius: 5px;
+    border: 1px solid #4F518C;
     box-shadow: 5px 5px 5px -2px #62626387; 
 }
 

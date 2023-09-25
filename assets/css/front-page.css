@@ -519,6 +519,9 @@ button:hover .button-text {
 .first-title {
   margin-top: 10vh;
   margin-bottom: 10vh;
+}
+
+h1, h2, h3 {
   font-family: 'Montserrat-Regular';
   color: #4F518C;
   text-transform: uppercase;
@@ -528,9 +531,6 @@ button:hover .button-text {
   text-align: center;
   margin-top: 2vh;
   margin-bottom: 1vh;
-  font-family: 'Montserrat-Regular';
-  color: #4F518C;
-  text-transform: uppercase;
 }
 
 p {
