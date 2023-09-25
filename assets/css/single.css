@@ -1,0 +1,70 @@
+.container-single {
+    width: 100vw;
+    height: auto;
+    }
+
+.title-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+/* Partie images */
+.container-img {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.single-photo {
+    width: 33%;
+    height: 50vh;
+    object-fit: contain;
+}
+
+/* Partie details, processus */
+.container-details-process {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.project-details, .project-process {
+    padding: 5px;
+    width: 44vw;
+    height: 40vh;
+    background-color: #DBDCFF;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px -2px #62626387; 
+}
+
+.project-details:hover, .project-process:hover {
+    box-shadow: none;
+}
+
+  /* Partie maquette, certificat, langages */
+  .container-maquette-languages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.maquette-cert, .languages-used {
+    padding: 5px;
+    width: 44vw;
+    height: 40vh;
+    background-color: #DBDCFF;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px -2px #62626387; 
+}
+
+.maquette-cert:hover, .languages-used:hover {
+    box-shadow: none;
+}

@@ -1,0 +1,29 @@
+@font-face{
+    font-family:'space-mono';
+    src: url('../fonts/SpaceMono-Regular.woff') format('woff');
+}
+
+@font-face{
+    font-family:'space-mono-bold';
+    src: url('../fonts/SpaceMono-Bold.woff') format('woff');
+}
+
+@font-face{
+    font-family:'space-mono-bold-italic';
+    src: url('../fonts/SpaceMono-BoldItalic.woff') format('woff');
+}
+
+@font-face{
+    font-family:'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face{
+    font-family:'Montserrat-Italic';
+    src: url('../fonts/Montserrat-Italic.ttf') format('truetype');
+}
+
+@font-face{
+    font-family:'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+}

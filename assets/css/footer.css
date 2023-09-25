@@ -1,0 +1,32 @@
+footer{
+    width: 100vw;
+    height: auto;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #4F518C;
+}
+  
+footer li{
+    padding: 0.9em 0.9em;
+    list-style: none;
+}
+  
+footer li a{
+    text-decoration: none;
+    font-family: 'Montserrat-Regular';
+    font-size: 14px;
+    color: #4F518C;
+    text-transform: uppercase;
+}
+
+footer li a:hover{
+    font-weight: bold;
+}
+
+#menu-item-16 {
+    pointer-events: none;
+}
