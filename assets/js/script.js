@@ -179,10 +179,18 @@ function createTypeWriter(text, speed, targetElementId, indexVariable, timeoutVa
 document.addEventListener("DOMContentLoaded", function () {
   const burger = document.querySelector(".burger");
   const nav = document.querySelector("nav");
+  const menuLinks = document.querySelectorAll(".menu-link");
 
   burger.addEventListener("click", function () {
-      nav.classList.toggle("nav-active");
-      burger.classList.toggle("toggle");
+    nav.classList.toggle("nav-active");
+    burger.classList.toggle("toggle");
+  });
+
+  menuLinks.forEach(function (link) {
+    link.addEventListener("click", function () {
+      nav.classList.remove("nav-active");
+      burger.classList.remove("toggle");
+    });
   });
 });
 

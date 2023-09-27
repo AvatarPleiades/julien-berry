@@ -16,19 +16,19 @@
             <p>Je m'appelle Julien Berry.</p>
             <p>Je suis né à Metz en 1992. Depuis je ne cesse d'alimenter ma curiosité en expérimentant le maximum tous les domaines possibles.</p>
             <p class="margin-bottom">D'un naturel ouvert, et dans l'accueil de nouvelles expériences, j'ai pu évoluer dans divers milieux professionnels et m'épanouir dans une vie personnelle très diversifiée.</p>
-            <p>J'ai pu lors de mon adolescence avoir une première expérience avec le développement Web en suivant les cours du "Site du Zéro", qui deviendra par la suite <a href="https://openclassrooms.com/fr/" title="Le site d'OpenClassrooms" alt="Site d'OpenClassrooms"><i class="fas fa-link link-deco"></i> OpenClassrooms</a> où je me formerais à nouveau dans ce domaine.</p>
+            <p>J'ai pu lors de mon adolescence avoir une première expérience avec le développement Web en suivant les cours du "Site du Zéro", qui deviendra par la suite <a href="https://openclassrooms.com/fr/" title="Le site d'OpenClassrooms" alt="Site d'OpenClassrooms" target="_blank"><i class="fas fa-link link-deco"></i> OpenClassrooms</a> où je me formerais à nouveau dans ce domaine.</p>
             <p>Celle-ci couplée à la découverte de Photoshop, je fais mes premiers sites vitrines en HTML, CSS et PHP.</p>
             <p>Suite à l'obtention de mon BAC STI Génie Électronique en 2012, je décide de commencer à travailler pour être indépendant.</p>
             <p class="margin-bottom">C'est ainsi que je vis mon premier contact avec le monde professionnel, passant de manutentionnaire/livreur à Guichetier pour répondre aux besoins des entreprises.</p>
             <p>Suite à cela, je décide avec un ami de prendre quelques mois pour parcourir la France à pied avec une charrette à la rencontre de projets et d'entreprises écologiques/alternatives/éthiques.</p>
-            <p>Dans le but des les interviewer et ainsi comprendre leur démarche et les partager au plus grand nombre à travers notre page l'Éveil Nomade sur <a href="https://www.facebook.com/eveilnomade" title="Page Facebook de l'Éveil Nomade" alt="Facebook de l'Éveil Nomade"><i class="fas fa-link link-deco"></i> Facebook</a>.</p>
+            <p>Dans le but des les interviewer et ainsi comprendre leur démarche et les partager au plus grand nombre à travers notre page l'Éveil Nomade sur <a href="https://www.facebook.com/eveilnomade" title="Page Facebook de l'Éveil Nomade" alt="Facebook de l'Éveil Nomade" target="_blank"><i class="fas fa-link link-deco"></i> Facebook</a>.</p>
             <p>Au passage, nous ramasserons au moins 1 sac de déchets par jour au bord des routes.</p>
             <?php get_template_part('/templates-part/image-slider'); ?>
             <p>Cette aventure renforça mon lien avec la nature et ma foi en l'humanité.</p>
             <p>Suite à cela je décide de travailler au Luxembourg dans les magasins cactus pour pouvoir par la suite faire la côte Ouest du Canada et des États-Unis en van.</p>
             <p>De retour en France, je trouve une place dans une entreprise de maraîchage bio, puis en tant que vendeur dans leur magasin à Kanfen.</p>
             <p>Début 2022, je décide d'aller vivre dans le Sud pour faire de nouvelles expériences, malheureusement je vais avoir un souci physique qui me scotchera au lit pendant quelque temps et remettant en question le fait de pouvoir continuer à travailler dans les métiers physiques.</p>
-            <p>C'est ainsi qu'en mars 2023, je décide de commencer la formation "Développeur WordPress" proposée par <a href="https://openclassrooms.com/fr/" title="Le site d'OpenClassrooms" alt="Site d'OpenClassrooms"><i class="fas fa-link link-deco"></i> OpenClassrooms</a>. Et me voici !</p>
+            <p>C'est ainsi qu'en mars 2023, je décide de commencer la formation "Développeur WordPress" proposée par <a href="https://openclassrooms.com/fr/" title="Le site d'OpenClassrooms" alt="Site d'OpenClassrooms" target="_blank"><i class="fas fa-link link-deco"></i> OpenClassrooms</a>. Et me voici !</p>
             </div>
             <div data-aos="flip-right" data-aos-offset="200" data-aos-duration="750" data-aos-easing="ease-in-sine" class="my-carreer">
                 <h2 class="second-title">Mon parcours Pro</h2>

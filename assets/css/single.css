@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10vh;
+    margin-top: 15vh;
 }
 
 /* Partie images */
@@ -22,6 +22,11 @@
     width: 33%;
     height: 50vh;
     object-fit: contain;
+}
+
+.banniere {
+    width: 100%;
+    margin-top: 1vh;
 }
 
 /* Partie details, processus */
@@ -57,4 +62,20 @@
 
 .paragraph-content p {
     font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .container-img {
+        flex-direction: column;
+    }
+    .single-photo {
+        width: 100%;
+    }
+    .container-details-process, .container-maquette-languages {
+        flex-direction: column;
+    }
+    .project-details, .project-process, .maquette-cert, .languages-used {
+        width: 90vw;
+        height: auto;
+    }
 }

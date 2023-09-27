@@ -4,7 +4,7 @@
                         <h1>Julien Berry</h1>
                         <p>Développeur WordPress</p>
                         <img  class="photo-julien" src="<?php echo get_theme_file_uri() . '/assets/images/photojulien.png'; ?>" alt="Photo de Julien">
-                        <p> Me contacter <i class="fas fa-chevron-right fa-little-icon"></i></p>
+                        <p>Me contacter <i class="fas fa-chevron-right fa-little-icon"></i></p>
                     </div>
                     <div class="flip-card-back">
                         <h1 class="white">Contact</h1>
@@ -16,7 +16,7 @@
                             </div>
                             <div class="tooltip">
                                 <span class="tooltiptext">GitHub de Julien Berry</span>
-                            <a href="https://github.com/AvatarPleiades" alt="GitHub de Julien Berry"><i class="fab fa-github fa-icon"></i></a>
+                            <a href="https://github.com/AvatarPleiades" alt="GitHub de Julien Berry" target="_blank"><i class="fab fa-github fa-icon"></i></a>
                             </div>
                         </div>
                         <div class="icon-group">

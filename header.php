@@ -13,16 +13,16 @@
         
         <header>
             <div class="julien_berry_logo">
-                <a href="http://localhost/julien-berry/">
+                <a href="https://portfolio.julien-berry.fr/">
                 <img src="<?php echo get_template_directory_uri() .'/assets/images/logo-berry.png';?>" alt="Logo de Julien Berry"></a>
             </div>
             <nav>
-                <ul>
-                    <li><a class="fill" href="#accueil">Accueil</a></li>
-                    <li><a class="fill" href="#apropos">À propos</a></li>
-                    <li><a class="fill" href="#portfolio">Portfolio</a></li>
-                    <li><a class="fill" href="#contact">Contact</a></li>
-                </ul>
+            <ul>
+                <li><a class="fill menu-link" href="#accueil">Accueil</a></li>
+                <li><a class="fill menu-link" href="#apropos">À propos</a></li>
+                <li><a class="fill menu-link" href="#portfolio">Portfolio</a></li>
+                <li><a class="fill menu-link" href="#contact">Contact</a></li>
+            </ul>
                 <div class="container-burger-icons">
                     <i class="fab fa-linkedin-in burger-icon"></i>
                     <a href="https://github.com/AvatarPleiades" title="GitHub de Julien Berry" alt="GitHub de Julien Berry"><i class="fab fa-github burger-icon"></i></a>
