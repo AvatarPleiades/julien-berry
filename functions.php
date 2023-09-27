@@ -25,4 +25,27 @@ register_nav_menus( array(
     'footer' => 'Menu Footer',
 ));
 
+// Navigation entre les projets
+function get_permalink_for_project($project_num) {
+    $project_query = new WP_Query(array(
+        'post_type' => 'projet-oc',
+        'meta_query' => array(
+            array(
+                'key' => 'num',
+                'value' => $project_num,
+                'compare' => '=',
+            ),
+        ),
+    ));
+
+    if ($project_query->have_posts()) {
+        $project_query->the_post();
+        $permalink = get_permalink();
+        wp_reset_postdata();
+        return $permalink;
+    } else {
+        return '';
+    }
+}
+
 ?>

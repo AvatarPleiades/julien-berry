@@ -64,6 +64,31 @@
     font-size: 16px;
 }
 
+/* Navigation bas de page */
+
+.project-navigation {
+    display: flex;
+    justify-content: center;
+    margin: 2vh 0 3vh 0;
+}
+
+.project-navigation-link {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #4F518C;
+    font-family: 'Montserrat-Regular';
+    text-transform: uppercase;
+}
+
+.project-link {
+    text-align: center;
+    font-size: 16px;
+}
+
+.project-link:hover {
+    scale: 1.1;
+}
+
 @media (max-width: 768px) {
     .container-img {
         flex-direction: column;
@@ -78,4 +103,10 @@
         width: 90vw;
         height: auto;
     }
+    .project-navigation-link {
+        margin: 0 40px;
+    }
+    .project-link {
+        text-align: unset;
+    }    
 }

@@ -2,6 +2,7 @@
 
 <?php 
 // Champs ACF
+    $project = get_field('projet');
     $name = get_field('nom');
     $details = get_field('details'); 
     $processus = get_field('processus');
@@ -37,7 +38,7 @@
 
 <div class="container-single">
     <div class="title-description">
-        <h1><?php  echo get_the_title(get_post_thumbnail_id()) ?></h1>
+        <h1><?php  echo $project ?></h1>
         <h3 class="second-title margin-bottom"><?php echo $name ?></h2>
     </div>
     <div class="container-img">
@@ -81,6 +82,73 @@
             </div>
         </div>
     </div>
+    <?php
+$num = get_field('num'); // Récupérer le numéro du projet actuel depuis le champ ACF
+$total_projects = wp_count_posts('projet-oc')->publish;
+$previous_project_num = $num - 1;
+$next_project_num = $num + 1;
+
+$previous_project_id = $next_project_id = null; // Initialisez les variables à null
+
+if ($previous_project_num >= 1) {
+    $previous_project_link = get_permalink_for_project($previous_project_num);
+    $previous_project_query = new WP_Query(array(
+        'post_type' => 'projet-oc',
+        'meta_query' => array(
+            array(
+                'key' => 'num',
+                'value' => $previous_project_num,
+                'compare' => '=',
+            ),
+        ),
+    ));
+
+    if ($previous_project_query->have_posts()) {
+        $previous_project_query->the_post();
+        $previous_project_id = get_the_ID();
+        wp_reset_postdata();
+    }
+}
+
+if ($next_project_num <= $total_projects) {
+    $next_project_link = get_permalink_for_project($next_project_num);
+    $next_project_query = new WP_Query(array(
+        'post_type' => 'projet-oc',
+        'meta_query' => array(
+            array(
+                'key' => 'num',
+                'value' => $next_project_num,
+                'compare' => '=',
+            ),
+        ),
+    ));
+
+    if ($next_project_query->have_posts()) {
+        $next_project_query->the_post();
+        $next_project_id = get_the_ID();
+        wp_reset_postdata();
+    }
+} else {
+    $next_project_link = '';
+}
+?>
+
+<div class="project-navigation">
+    <?php if (!empty($previous_project_link)) : ?>
+        <a href="<?php echo esc_url($previous_project_link); ?>" class="project-navigation-link">
+            <h3><i class="fas fa-arrow-left"></i>Projet Précédent</h3>
+            <p class="project-link"><?php echo get_field('projet', $previous_project_id); ?></p>
+        </a>
+    <?php endif; ?>
+
+    <?php if (!empty($next_project_link)) : ?>
+        <a href="<?php echo esc_url($next_project_link); ?>" class="project-navigation-link">
+            <h3>Projet Suivant <i class="fas fa-arrow-right"></i></h3>
+            <p class="project-link"><?php echo get_field('projet', $next_project_id); ?></p>
+        </a>
+    <?php endif; ?>
+</div>
+
     <?php get_template_part('/templates-part/social-icon'); ?>
 </div>
 
