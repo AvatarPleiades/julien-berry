@@ -829,7 +829,11 @@ button.all-projects {
     width: 100%;
   }
   .swiper-slide img {
-    width: 70%;
+    max-width: 90%;
+    width: 90%;
+  }
+  .swiper-button-next, .swiper-button-prev, .swiper-rtl {
+    display: none !important;
   }
   .container-form-info {
     flex-direction: column;

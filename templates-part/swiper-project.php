@@ -1,41 +1,30 @@
 <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-    <div class="swiper-slide">
-        <img src="<?php echo get_theme_file_uri('/assets/images/projets/julien-berry-view.png'); ?>">
-    </div>
-    <div class="swiper-slide">
-        <img src="<?php echo get_theme_file_uri('/assets/images/projets/emoving-view.png'); ?>">
-    </div>
-    <div class="swiper-slide">
-        <img src="<?php echo get_theme_file_uri('/assets/images/projets/mota-view.png'); ?>">
-    </div>
-    <div class="swiper-slide">
-        <img src="<?php echo get_theme_file_uri('/assets/images/projets/medit-view.png'); ?>">
-    </div>
-    <div class="swiper-slide">
-        <img src="<?php echo get_theme_file_uri('/assets/images/projets/koukaki-view.png'); ?>">
-    </div>
-    <div class="swiper-slide">
-        <img src="<?php echo get_theme_file_uri('/assets/images/projets/printit-view.png'); ?>">
-    </div>
-    <div class="swiper-slide">
-        <img src="<?php echo get_theme_file_uri('/assets/images/projets/chic-dressing-view.png'); ?>">
-    </div>
-    <div class="swiper-slide">
-        <img src="<?php echo get_theme_file_uri('/assets/images/projets/planty-view.png'); ?>">
-    </div>
-    <div class="swiper-slide">
-        <img src="<?php echo get_theme_file_uri('/assets/images/projets/the-artbox-view.png'); ?>">
-    </div>
-    <div class="swiper-slide">
-        <img src="<?php echo get_theme_file_uri('/assets/images/projets/simpl-vintage-view.png'); ?>">
-    </div>
-    <div class="swiper-slide">
-        <img src="<?php echo get_theme_file_uri('/assets/images/projets/booki-view.png'); ?>">
-    </div>
-    <div class="swiper-slide">
-        <img src="<?php echo get_theme_file_uri('/assets/images/projets/riding-cities-view.png'); ?>">
-    </div>
+        <?php
+        // Récupérer les projets ACF dans l'ordre décroissant en fonction de $num
+        $args = array(
+            'post_type' => 'projet-oc',
+            'posts_per_page' => -1,
+            'orderby' => 'meta_value_num',
+            'meta_key' => 'num',
+            'order' => 'DESC'
+        );
+        $query = new WP_Query($args);
+
+        if ($query->have_posts()) :
+            while ($query->have_posts()) :
+                $query->the_post();
+                $desktop_url = get_field('desktop');
+                ?>
+                <div class="swiper-slide">
+                    <a href="<?php the_permalink(); ?>">
+                        <img src="<?php echo esc_url($desktop_url); ?>">
+                    </a>
+                </div>
+            <?php endwhile;
+        endif;
+        wp_reset_postdata();
+        ?>
     </div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>

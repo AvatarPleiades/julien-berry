@@ -25,6 +25,15 @@
     $desktop_url = get_field('desktop');
 	$tablette_url = get_field('tablette');
     $mobile_url = get_field('mobile');
+
+// Langages utilisés
+    $wordpress = get_field('wordpress');
+    $html = get_field('html');
+    $css = get_field('css');
+    $javascript = get_field('javascript');
+    $php = get_field('php');
+    $bootstrap = get_field('bootstrap');
+
 //Récupération de l'id et de l'url	
 	$id = get_the_ID();
     $url = get_permalink();
@@ -76,79 +85,96 @@
             </div>
         </div>
         <div class="languages-used">
-            <h2 class="second-title">Langages utilisés et autres liens</h2>
-            <div class="paragraph-content">
-                <p class="size">Pour réaliser ce projet, j'ai eu recours à ces langages:</p>
+            <h2 class="second-title">Langages utilisés</h2>
+            <div class="languages-content">
+                <?php
+                if (!empty($wordpress)) {
+                    echo '<img src="' . esc_url($wordpress) . '" alt="Fait sur WordPress" title="Fait sur WordPress">';
+                }
+                if (!empty($html)) {
+                    echo '<img src="' . esc_url($html) . '" alt="Codé avec HTML5" title="Codé avec HTML5">';
+                }
+                if (!empty($css)) {
+                    echo '<img src="' . esc_url($css) . '" alt="Codé avec CSS3" title="Codé avec CSS3">';
+                }
+                if (!empty($javascript)) {
+                    echo '<img src="' . esc_url($javascript) . '" alt="Codé avec JavaScript" title="Codé avec JavaScript">';
+                }
+                if (!empty($php)) {
+                    echo '<img src="' . esc_url($php) . '" alt="Codé avec PHP8" title="Codé avec PHP8">';
+                }
+                if (!empty($bootstrap)) {
+                    echo '<img src="' . esc_url($bootstrap) . '" alt="Utilisation de Bootstrap" title="Utilisation de Bootstrap">';
+                }
+                ?>
             </div>
         </div>
     </div>
     <?php
-$num = get_field('num'); // Récupérer le numéro du projet actuel depuis le champ ACF
-$total_projects = wp_count_posts('projet-oc')->publish;
-$previous_project_num = $num - 1;
-$next_project_num = $num + 1;
+        $num = get_field('num');
+        $total_projects = wp_count_posts('projet-oc')->publish;
+        $previous_project_num = $num - 1;
+        $next_project_num = $num + 1;
 
-$previous_project_id = $next_project_id = null; // Initialisez les variables à null
+        $previous_project_id = $next_project_id = null;
 
-if ($previous_project_num >= 1) {
-    $previous_project_link = get_permalink_for_project($previous_project_num);
-    $previous_project_query = new WP_Query(array(
-        'post_type' => 'projet-oc',
-        'meta_query' => array(
-            array(
-                'key' => 'num',
-                'value' => $previous_project_num,
-                'compare' => '=',
-            ),
-        ),
-    ));
+        if ($previous_project_num >= 1) {
+            $previous_project_link = get_permalink_for_project($previous_project_num);
+            $previous_project_query = new WP_Query(array(
+                'post_type' => 'projet-oc',
+                'meta_query' => array(
+                    array(
+                        'key' => 'num',
+                        'value' => $previous_project_num,
+                        'compare' => '=',
+                    ),
+                ),
+            ));
 
-    if ($previous_project_query->have_posts()) {
-        $previous_project_query->the_post();
-        $previous_project_id = get_the_ID();
-        wp_reset_postdata();
-    }
-}
+            if ($previous_project_query->have_posts()) {
+                $previous_project_query->the_post();
+                $previous_project_id = get_the_ID();
+                wp_reset_postdata();
+            }
+        }
 
-if ($next_project_num <= $total_projects) {
-    $next_project_link = get_permalink_for_project($next_project_num);
-    $next_project_query = new WP_Query(array(
-        'post_type' => 'projet-oc',
-        'meta_query' => array(
-            array(
-                'key' => 'num',
-                'value' => $next_project_num,
-                'compare' => '=',
-            ),
-        ),
-    ));
+        if ($next_project_num <= $total_projects) {
+            $next_project_link = get_permalink_for_project($next_project_num);
+            $next_project_query = new WP_Query(array(
+                'post_type' => 'projet-oc',
+                'meta_query' => array(
+                    array(
+                        'key' => 'num',
+                        'value' => $next_project_num,
+                        'compare' => '=',
+                    ),
+                ),
+            ));
 
-    if ($next_project_query->have_posts()) {
-        $next_project_query->the_post();
-        $next_project_id = get_the_ID();
-        wp_reset_postdata();
-    }
-} else {
-    $next_project_link = '';
-}
-?>
+            if ($next_project_query->have_posts()) {
+                $next_project_query->the_post();
+                $next_project_id = get_the_ID();
+                wp_reset_postdata();
+            }
+        } else {
+            $next_project_link = '';
+        }
+    ?>
+    <div class="project-navigation">
+        <?php if (!empty($previous_project_link)) : ?>
+            <a href="<?php echo esc_url($previous_project_link); ?>" class="project-navigation-link">
+                <h3><i class="fas fa-arrow-left"></i> Précédent</h3>
+                <p class="project-link-right"><?php echo get_field('projet', $previous_project_id); ?></p>
+            </a>
+        <?php endif; ?>
 
-<div class="project-navigation">
-    <?php if (!empty($previous_project_link)) : ?>
-        <a href="<?php echo esc_url($previous_project_link); ?>" class="project-navigation-link">
-            <h3><i class="fas fa-arrow-left"></i>Projet Précédent</h3>
-            <p class="project-link"><?php echo get_field('projet', $previous_project_id); ?></p>
-        </a>
-    <?php endif; ?>
-
-    <?php if (!empty($next_project_link)) : ?>
-        <a href="<?php echo esc_url($next_project_link); ?>" class="project-navigation-link">
-            <h3>Projet Suivant <i class="fas fa-arrow-right"></i></h3>
-            <p class="project-link"><?php echo get_field('projet', $next_project_id); ?></p>
-        </a>
-    <?php endif; ?>
-</div>
-
+        <?php if (!empty($next_project_link)) : ?>
+            <a href="<?php echo esc_url($next_project_link); ?>" class="project-navigation-link">
+                <h3>Suivant <i class="fas fa-arrow-right"></i></h3>
+                <p class="project-link"><?php echo get_field('projet', $next_project_id); ?></p>
+            </a>
+        <?php endif; ?>
+    </div>
     <?php get_template_part('/templates-part/social-icon'); ?>
 </div>
 

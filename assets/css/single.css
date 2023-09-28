@@ -53,11 +53,22 @@
 }
 
 .maquette-cert, .languages-used {
-    height: 40vh;
+    height: 30vh;
 }
 
-.paragraph-content {
+.paragraph-content, .languages-content {
     padding: 20px;
+}
+
+.languages-content {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.languages-content img {
+    width: 6vw;
+    height: auto;
 }
 
 .paragraph-content p {
@@ -81,12 +92,17 @@
 }
 
 .project-link {
-    text-align: center;
+    text-align: left;
     font-size: 16px;
 }
 
-.project-link:hover {
+.project-link:hover, .project-link-right:hover {
     scale: 1.1;
+}
+
+.project-link-right {
+    text-align: right;
+    font-size: 16px;
 }
 
 @media (max-width: 768px) {
@@ -104,9 +120,13 @@
         height: auto;
     }
     .project-navigation-link {
-        margin: 0 40px;
+        margin: 0 28px;
     }
     .project-link {
         text-align: unset;
-    }    
+        font-size: 14px;
+    }  
+    .languages-content img {
+        width: 14vw;
+    }  
 }

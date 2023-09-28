@@ -25,6 +25,19 @@ register_nav_menus( array(
     'footer' => 'Menu Footer',
 ));
 
+// Ajout de la gestion du modèle pour la page de listage des projets
+
+function custom_page_template($template) {
+    if (is_page('tous-les-projets')) {
+        $new_template = locate_template(array('projects-list.php'));
+        if (!empty($new_template)) {
+            return $new_template;
+        }
+    }
+    return $template;
+}
+add_filter('page_template', 'custom_page_template');
+
 // Navigation entre les projets
 function get_permalink_for_project($project_num) {
     $project_query = new WP_Query(array(
