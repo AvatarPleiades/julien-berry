@@ -11,6 +11,7 @@ function julien_berry_style_script() {
     wp_enqueue_style('page', get_template_directory_uri() . '/assets/css/page.css');
     wp_enqueue_style('front-page', get_template_directory_uri() . '/assets/css/front-page.css');
     wp_enqueue_style('single', get_template_directory_uri() . '/assets/css/single.css');
+    wp_enqueue_style('projects-list', get_template_directory_uri() . '/assets/css/projects-list.css');
     wp_enqueue_style( 'swiper-css', get_stylesheet_directory_uri() . '/node_modules/swiper/swiper-bundle.min.css', array());
     wp_enqueue_script( 'swiper-js', get_template_directory_uri() . '/node_modules/swiper/swiper-bundle.min.js', array(), '9.2.0', true );
     wp_enqueue_script('script', get_template_directory_uri() . '/assets/js/script.js', array(), '1.0', true);
@@ -28,7 +29,7 @@ register_nav_menus( array(
 // Ajout de la gestion du modèle pour la page de listage des projets
 
 function custom_page_template($template) {
-    if (is_page('tous-les-projets')) {
+    if (is_page('149')) {
         $new_template = locate_template(array('projects-list.php'));
         if (!empty($new_template)) {
             return $new_template;

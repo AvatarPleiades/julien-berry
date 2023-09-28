@@ -1,27 +1,66 @@
 <?php get_header(); ?>
 
+<?php 
+// Champs ACF
+    $project = get_field('projet');
+    $name = get_field('nom');
+    $details = get_field('details'); 
+    $num = get_field('num');
+    $banniere = get_field('banniere');
+    $desktop_url = get_field('desktop');
+
+// Langages utilisés
+    $wordpress = get_field('wordpress');
+    $html = get_field('html');
+    $css = get_field('css');
+    $javascript = get_field('javascript');
+    $php = get_field('php');
+    $bootstrap = get_field('bootstrap');
+
+//Récupération de l'id et de l'url	
+	$id = get_the_ID();
+    $url = get_permalink();
+?>
+
 <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
 
 <div class="container-single">
     <div class="title-description">
-        <h1><?php  echo $project ?></h1>
+        <h1>Tous les projets</h1>
         <h3 class="second-title margin-bottom"><?php echo $name ?></h2>
     </div>
-    <div class="container-img">
-        <img class ="single-photo" src="<?php echo $tablette_url ?>" alt="<?php the_title_attribute(); ?>" title="<?php echo get_the_title(get_post_thumbnail_id()) ?> sur Tablette">
-        <img class ="single-photo" src="<?php echo $desktop_url ?>" alt="<?php the_title_attribute(); ?>" title="<?php echo get_the_title(get_post_thumbnail_id()) ?> sur Desktop">
-        <img class ="single-photo" src="<?php echo $mobile_url ?>" alt="<?php the_title_attribute(); ?>" title="<?php echo get_the_title(get_post_thumbnail_id()) ?> sur Mobile">
-    </div>
-    <p class="text-align">Projet <?php echo $num ?> de la formation "Développeur WordPress" d'OpenClassrooms</p>
-    <div class="container-details-process">
-        <div class="project-details">
-            <h2 class="second-title">Détails du projet</h2>
-            <div class="paragraph-content">
-                <p class="size"><?php echo $details ?></p>
-                <img class="banniere" src="<?php echo $banniere ?>">
-            </div>
-        </div>
+    <p class="text-align">Retrouvez sur cette page tous les projets sur lesquels j'ai travaillé.</p>
+    <div class="projects-grid">
+        <?php 
+        $args = array(
+            'post_type' => 'projet-oc',
+            'posts_per_page' => -1,
+        );
+
+        $query = new WP_Query($args);
+
+        if ($query->have_posts()) :
+            while ($query->have_posts()) : $query->the_post(); 
+            ?>
+            <a href="<?php the_permalink(); ?>"> <!-- Lien vers le projet -->
+                <div class="project-block">
+                    <div class="project-img">
+                        <img src="<?php echo esc_url(get_field('desktop')); ?>">      
+                    </div>
+                </div>
+            </a>
+            <?php endwhile; 
+            wp_reset_postdata();
+        else :
+            echo 'Aucun projet trouvé.';
+        endif;
+        ?> 
     </div>
 </div>
+
+<?php get_footer(); ?>
+
+
+<?php endwhile; endif ?> 
 
 <?php get_footer(); ?>

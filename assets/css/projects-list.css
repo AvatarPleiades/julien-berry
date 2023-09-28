@@ -1,0 +1,15 @@
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 projets par ligne */
+    grid-gap: 20px; /* Espacement entre les projets */
+}
+
+.project-block {
+    width: 100%;
+    max-width: calc(25% - 20px); /* Pour 4 projets par ligne avec un espacement de 20px entre eux */
+}
+
+.project-img img {
+    max-width: 100%;
+    height: auto;
+}
