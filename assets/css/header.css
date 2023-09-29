@@ -84,7 +84,7 @@ nav a:hover{
 }
 
 /* Media queries Mobile */
-@media (max-width: 768px) {
+@media (max-width: 840px) {
     nav{
         display: none;
         position: absolute;

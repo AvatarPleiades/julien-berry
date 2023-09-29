@@ -1,3 +1,12 @@
+.container-list {
+    width: 100vw;
+    height: auto;
+    }
+
+.subtitle p {
+    font-size: 18px;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -11,7 +20,7 @@
 
 .project-block {
     width: 90%;
-    height: 50vh;
+    height: 55vh;
     border: 3px solid #4F518C;
     border-radius: 10px;
     transition: transform 0.5s ease;
@@ -49,7 +58,7 @@
 }
 
 .languages-list img {
-    width: 2vw;
+    width: 3vw;
     height: auto;
 }
 
@@ -65,6 +74,7 @@
     margin: 0 5px;
     border: 1px solid #4F518C;
     background-color: #4F518C;
+    font-family: 'Montserrat-Regular';
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
@@ -78,6 +88,9 @@
 
 
 @media (max-width: 768px) {
+    .container-list p {
+        font-size: 18px;
+    }
     .projects-grid {
         grid-template-columns: 1fr;
         margin-left: 35px;
@@ -90,6 +103,32 @@
     }
     .languages-list img {
         width: 10vw;
+    }
+    .filter-buttons button {
+        margin: 5px 8px;
+    }
+}
+
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 840px) {
+    .container-list p {
+        font-size: 24px;
+    }
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 15px;
+    }
+    .project-block {
+        width: 95%;
+        height: auto;
+    }
+    .project-content p {
+        font-size: 18px;
+    }
+    .languages-list img {
+        width: 6vw;
     }
     .filter-buttons button {
         margin: 5px 8px;

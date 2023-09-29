@@ -29,7 +29,7 @@ register_nav_menus( array(
 // Ajout de la gestion du modèle pour la page de listage des projets
 
 function custom_page_template($template) {
-    if (is_page('149')) {
+    if (is_page('148')) {
         $new_template = locate_template(array('projects-list.php'));
         if (!empty($new_template)) {
             return $new_template;

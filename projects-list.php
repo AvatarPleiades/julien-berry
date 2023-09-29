@@ -26,12 +26,14 @@ $url = get_permalink();
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-<div class="container-single">
+<div class="container-list">
     <div class="title-description">
         <h1>Tous les projets</h1>
         <h3 class="second-title margin-bottom"><?php echo $name ?></h2>
     </div>
-    <p class="text-align margin-bottom">Retrouvez sur cette page tous les projets sur lesquels j'ai travaillé.</p>
+    <div class="subtitle">
+        <p class="text-align margin-bottom">Retrouvez sur cette page tous les projets sur lesquels j'ai travaillé.</p>
+    </div>
     <div class="filter-buttons">
         <button data-filter="all">Tous</button>
         <button data-filter="html">HTML</button>
