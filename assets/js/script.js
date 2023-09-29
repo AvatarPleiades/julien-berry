@@ -209,3 +209,39 @@ const swiper = new Swiper(".mySwiper", {
     disableOnInteraction: true,
   },
 });
+
+// Filtre des langages dans la page de tous les projets
+
+document.addEventListener('DOMContentLoaded', function () {
+  const filterButtons = document.querySelectorAll('.filter-buttons button');
+  filterButtons.forEach(function (button) {
+      button.addEventListener('click', function () {
+          const filter = this.getAttribute('data-filter');
+          filterProjects(filter);
+      });
+  });
+
+  function filterProjects(filter) {
+      const projectBlocks = document.querySelectorAll('.project-block');
+      projectBlocks.forEach(function (block) {
+          block.style.display = 'none';
+      });
+      if (filter === 'all') {
+          projectBlocks.forEach(function (block) {
+              block.style.display = 'block';
+          });
+      } else {
+          const filteredBlocks = document.querySelectorAll('.project-block.' + filter);
+          filteredBlocks.forEach(function (block) {
+              block.style.display = 'block';
+          });
+      }
+
+      const container = document.querySelector('.projects-grid');
+      const visibleProjects = document.querySelectorAll('.project-block[style="display: block;"]');
+      const visibleProjectsArray = Array.from(visibleProjects);
+      visibleProjectsArray.forEach(function (project) {
+          container.appendChild(project);
+      });
+  }
+});

@@ -64,7 +64,7 @@
                     <span class="circle" aria-hidden="true">
                         <span class="icon arrow"></span>
                     </span>
-                    <span class="button-project">Tous les projets</span>
+                    <a href="http://localhost/julien-berry/tous-les-projets/"><span class="button-project">Tous les projets</span></a>
                 </button>
             </div>
         </div>    
