@@ -75,3 +75,23 @@
     background-color: #fff;
     color: #4F518C;
 }
+
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        margin-left: 35px;
+    }
+    .project-block {
+        height: auto;
+    }
+    .project-content p {
+        font-size: 18px;
+    }
+    .languages-list img {
+        width: 10vw;
+    }
+    .filter-buttons button {
+        margin: 5px 8px;
+    }
+}
