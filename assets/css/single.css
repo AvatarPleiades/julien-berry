@@ -151,3 +151,21 @@
         width: 14vw;
     }  
 }
+
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 840px) {
+    .container-img {
+        flex-direction: column;
+    }
+    .single-photo {
+        width: 100%;
+    }
+    .container-details-process, .container-maquette-languages {
+        flex-direction: column;
+    }
+    .project-details, .project-process, .maquette-cert, .languages-used {
+        width: 90vw;
+        height: auto;
+    }
+  }

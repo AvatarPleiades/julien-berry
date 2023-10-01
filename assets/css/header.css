@@ -49,6 +49,10 @@ nav a:hover{
     font-weight: bold;
 }
 
+nav a:visited {
+    color: #ffffff;
+}
+
 .fill {
     transition: 0.4s;
 }
@@ -84,7 +88,7 @@ nav a:hover{
 }
 
 /* Media queries Mobile */
-@media (max-width: 840px) {
+@media (max-width: 768px) {
     nav{
         display: none;
         position: absolute;
@@ -156,3 +160,78 @@ nav a:hover{
         scale: 1.2;
       }
 }
+
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 840px) {
+    nav{
+        display: none;
+        position: absolute;
+        height: 40vh;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #4F518C;
+        z-index: 999;
+        animation: slide-up 0.2s ease-in-out;
+      }
+    
+      @keyframes slide-up{
+          from{
+              top: -30%
+          }
+          to{
+              top: 100%;
+          }
+      }
+          
+      .nav-active{
+        display: block;
+      }
+    
+      nav ul{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 30px;
+          margin-bottom: 10px;
+      }
+      
+      nav li{
+          padding: 1.3em 22px;
+      }
+    
+      nav li a{
+          color:#ffffff;
+          font-size: 30px;
+      }
+    
+      nav li a:hover{
+          color: #ffffff;
+      }
+      
+      .burger{
+          display: block;
+          cursor: pointer;
+      }
+    
+      .burger.toggle .line:nth-child(1){
+          transform: rotate(45deg) translate(6px, 0px);
+      }
+    
+      .burger.toggle .line:nth-child(2){
+          display: none;
+      }
+    
+      .burger.toggle .line:nth-child(3){
+          transform: rotate(-45deg) translate(6px, 0px);
+      }
+      .burger-icon {
+        display: block;
+        font-size: 60px;
+        color: #ffffff;
+      }
+      .burger-icon:hover {
+        scale: 1.2;
+      }
+  }
