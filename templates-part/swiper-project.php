@@ -18,7 +18,7 @@
                 ?>
                 <div class="swiper-slide">
                     <a href="<?php the_permalink(); ?>">
-                        <img src="<?php echo esc_url($desktop_url); ?>">
+                        <img src="<?php echo esc_url($desktop_url); ?>" alt="<?php the_title_attribute(); ?>" title="<?php echo get_the_title(get_post_thumbnail_id()) ?>">
                     </a>
                 </div>
             <?php endwhile;

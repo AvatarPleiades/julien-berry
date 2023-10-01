@@ -3,7 +3,7 @@
                     <div class="flip-card-front">
                         <h1>Julien Berry</h1>
                         <p>Développeur WordPress</p>
-                        <img  class="photo-julien" src="<?php echo get_theme_file_uri() . '/assets/images/photojulien.png'; ?>" alt="Photo de Julien">
+                        <img  class="photo-julien" src="<?php echo get_theme_file_uri() . '/assets/images/photojulien.png'; ?>" alt="Photo de Julien" title="Photo de Julien">
                         <p>Me contacter <i class="fas fa-chevron-right fa-little-icon"></i></p>
                     </div>
                     <div class="flip-card-back">

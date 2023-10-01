@@ -9,6 +9,7 @@
         <li>Suivi des stocks et commandes</li>
         <li>Réception des producteurs et de leurs livraisons</li>
         </p>
+        </ul>
         </div>
     </div>
     <div class="container-timeline right">
@@ -20,6 +21,7 @@
             <li>Plantation, récolte, entretien</li>
             <li>Préparation de commandes</li>
             </p>
+            </ul>
         </div>
     </div>
     <div class="container-timeline left">
@@ -31,6 +33,7 @@
             <li>Vente en caisse</li>
             <li>Mise en Rayon et suivi des stocks</li>
             </p>
+            </ul>
         </div>
     </div>
     <div class="container-timeline right">
@@ -42,6 +45,7 @@
             <li>Plantation, récolte, entretien</li>
             <li>Préparation de commandes</li>
             </p>
+            </ul>
         </div>
     </div>
     <div class="container-timeline left">
@@ -53,6 +57,7 @@
             <li>Mise en Rayon dans les supermarchés Cactus Luxembourg</li>
             <li>Suivi des stocks et commandes</li>
             </p>
+            </ul>
         </div>
     </div>
     <div class="container-timeline right">

@@ -85,7 +85,7 @@
                     <strong>E-mail:</strong> <a href="mailto:berry.julien57@gmail.com" title="Envoyez-moi un e-mail"><i class="fas fa-envelope"></i> berry.julien57@gmail.com</a><br>
                     <strong>Téléphone:</strong> 06.25.78.47.54<br><br>
                 </p>
-                <img class="info-picture" title="Canon Beach - Oregon, USA" src="<?php echo get_theme_file_uri('/assets/images/julien-canada.jpg'); ?>">
+                <img class="info-picture" title="Canon Beach - Oregon, USA" src="<?php echo get_theme_file_uri('/assets/images/julien-canada.jpg'); ?>" alt="Photo de mon voyage à Canon Beach - Oregon, USA">
             </div>
         </div>
     </div>
