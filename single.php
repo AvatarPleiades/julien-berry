@@ -7,6 +7,8 @@
     $details = get_field('details'); 
     $processus = get_field('processus');
     $num = get_field('num');
+    $titre_github = get_field('titre_github');
+    $lien_github = get_field('lien_github');
     $titre_maquette = get_field('titre_maquette');
 	$maquette_url = get_field('lien_maquette');
     $titre_prototype = get_field('prototype');
@@ -75,6 +77,7 @@
         <div class="maquette-cert">
             <h2 class="second-title">Maquettes et certificats</h2>
             <div class="paragraph-content">
+                <a href="<?php echo ($lien_github) ?>" alt="<?php echo $titre_github ?>" title="<?php echo $titre_github ?>" target="_blank"><p class="text-align size"><?php echo $titre_github ?></p></a>                
                 <a href="<?php echo ($maquette_url) ?>" alt="<?php echo $titre_maquette ?>" title="<?php echo $titre_maquette ?>" target="_blank"><p class="text-align size"><?php echo $titre_maquette ?></p></a>
                 <a href="<?php echo ($prototype_url) ?>" alt="<?php echo $titre_prototype ?>" title="<?php echo $titre_prototype ?>" target="_blank"><p class="text-align size"><?php echo $titre_prototype ?></p></a>
                 <a href="<?php echo ($lien_url_1) ?>" alt="<?php echo $titre_lien ?>" title="<?php echo $titre_lien ?>" target="_blank"><p class="text-align size"><?php echo $titre_lien ?></p></a>
