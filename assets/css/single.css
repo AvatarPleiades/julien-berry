@@ -75,30 +75,9 @@
     font-size: 16px;
 }
 
-.paragraph-content a {
-    color: #4F518C;
-    position: relative;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.paragraph-content a::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    border-radius: 4px;
-    background-color: #4F518C;
-    bottom: 0;
-    left: 0;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform .3s ease-in-out;
-}
-
-.paragraph-content a:hover::before {
-    transform-origin: left;
-    transform: scaleX(1);
+.paragraph-content a:hover {
+    text-decoration: underline;
+    color:#4F518C;
 }
 
 /* Navigation bas de page */
