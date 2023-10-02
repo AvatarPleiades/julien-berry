@@ -115,64 +115,29 @@
     </div>
     <?php
         $num = get_field('num');
-        $total_projects = wp_count_posts('projet-oc')->publish;
-        $previous_project_num = $num - 1;
-        $next_project_num = $num + 1;
-
-        $previous_project_id = $next_project_id = null;
-
-        if ($previous_project_num >= 1) {
-            $previous_project_link = get_permalink_for_project($previous_project_num);
-            $previous_project_query = new WP_Query(array(
-                'post_type' => 'projet-oc',
-                'meta_query' => array(
-                    array(
-                        'key' => 'num',
-                        'value' => $previous_project_num,
-                        'compare' => '=',
-                    ),
-                ),
-            ));
-
-            if ($previous_project_query->have_posts()) {
-                $previous_project_query->the_post();
-                $previous_project_id = get_the_ID();
-                wp_reset_postdata();
-            }
-        }
-
-        if ($next_project_num <= $total_projects) {
-            $next_project_link = get_permalink_for_project($next_project_num);
-            $next_project_query = new WP_Query(array(
-                'post_type' => 'projet-oc',
-                'meta_query' => array(
-                    array(
-                        'key' => 'num',
-                        'value' => $next_project_num,
-                        'compare' => '=',
-                    ),
-                ),
-            ));
-
-            if ($next_project_query->have_posts()) {
-                $next_project_query->the_post();
-                $next_project_id = get_the_ID();
-                wp_reset_postdata();
-            }
-        } else {
-            $next_project_link = '';
-        }
-    ?>
+        $args = array(
+            'post_type' => 'projet-oc',
+            'posts_per_page' => -1,
+            'meta_key' => 'num',
+            'orderby' => 'meta_value_num',
+            'order' => 'ASC',
+        );
+        $all_projects = get_posts($args);
+        $current_project_index = array_search($num, array_column($all_projects, 'num'));
+        $previous_project_index = $current_project_index - 1;
+        $previous_project_id = ($previous_project_index >= 0) ? $all_projects[$previous_project_index]->ID : null;
+        $next_project_index = $current_project_index + 1;
+        $next_project_id = ($next_project_index < count($all_projects)) ? $all_projects[$next_project_index]->ID : null;
+        ?>
     <div class="project-navigation">
-        <?php if (!empty($previous_project_link)) : ?>
-            <a href="<?php echo esc_url($previous_project_link); ?>" class="project-navigation-link">
+        <?php if (!empty($previous_project_id)) : ?>
+            <a href="<?php echo get_permalink($previous_project_id); ?>" class="project-navigation-link">
                 <h3><i class="fas fa-arrow-left"></i> Précédent</h3>
                 <p class="project-link-right"><?php echo get_field('projet', $previous_project_id); ?></p>
             </a>
         <?php endif; ?>
-
-        <?php if (!empty($next_project_link)) : ?>
-            <a href="<?php echo esc_url($next_project_link); ?>" class="project-navigation-link">
+        <?php if (!empty($next_project_id)) : ?>
+            <a href="<?php echo get_permalink($next_project_id); ?>" class="project-navigation-link">
                 <h3>Suivant <i class="fas fa-arrow-right"></i></h3>
                 <p class="project-link"><?php echo get_field('projet', $next_project_id); ?></p>
             </a>
