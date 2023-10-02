@@ -31,10 +31,10 @@
             </div>
             <nav>
             <ul>
-                <li><a class="fill menu-link" href="#accueil">Accueil</a></li>
-                <li><a class="fill menu-link" href="#apropos">À propos</a></li>
-                <li><a class="fill menu-link" href="#portfolio">Portfolio</a></li>
-                <li><a class="fill menu-link" href="#contact">Contact</a></li>
+                <li><a class="fill menu-link" href="https://portfolio.julien-berry.fr/#accueil">Accueil</a></li>
+                <li><a class="fill menu-link" href="https://portfolio.julien-berry.fr/#apropos">À propos</a></li>
+                <li><a class="fill menu-link" href="https://portfolio.julien-berry.fr/#portfolio">Portfolio</a></li>
+                <li><a class="fill menu-link" href="https://portfolio.julien-berry.fr/#contact">Contact</a></li>
             </ul>
                 <div class="container-burger-icons">
                     <i class="fab fa-linkedin-in burger-icon"></i>
