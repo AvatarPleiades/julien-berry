@@ -57,7 +57,12 @@
         <img class ="single-photo" src="<?php echo $desktop_url ?>" alt="<?php the_title_attribute(); ?>" title="<?php echo get_the_title(get_post_thumbnail_id()) ?> sur Desktop">
         <img class ="single-photo" src="<?php echo $mobile_url ?>" alt="<?php the_title_attribute(); ?>" title="<?php echo get_the_title(get_post_thumbnail_id()) ?> sur Mobile">
     </div>
-    <p class="text-align">Projet <?php echo $num ?> de la formation "Développeur WordPress" d'OpenClassrooms</p>
+    <?php
+    $project_num = get_field('num');
+    if ($project_num <= 13) :
+    ?>
+        <p class="text-align">Projet <?php echo $project_num; ?> de la formation "Développeur WordPress" d'OpenClassrooms</p>
+    <?php endif; ?>
     <div class="container-details-process">
         <div class="project-details">
             <h2 class="second-title">Détails du projet</h2>

@@ -658,7 +658,7 @@ button.all-projects {
   resize: none;
 }
 
-.form input[type="Submit"]{
+.form input[type="Submit"] {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -676,7 +676,7 @@ button.all-projects {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.02);
 }
 
-.form input[type="Submit"]:hover{
+.form input[type="Submit"]:hover {
   scale: 1.1;
 }
 

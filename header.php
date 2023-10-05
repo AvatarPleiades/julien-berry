@@ -37,9 +37,9 @@
                 <li><a class="fill menu-link" href="https://portfolio.julien-berry.fr/#contact">Contact</a></li>
             </ul>
                 <div class="container-burger-icons">
-                    <i class="fab fa-linkedin-in burger-icon"></i>
+                    <a href="https://www.linkedin.com/in/julien-berry-dev-wordpress"><i class="fab fa-linkedin-in burger-icon"></i></a>
                     <a href="https://github.com/AvatarPleiades" title="GitHub de Julien Berry" alt="GitHub de Julien Berry"><i class="fab fa-github burger-icon"></i></a>
-                    <i class="fab fa-twitter burger-icon"></i>
+                    <a href="https://twitter.com/JulienBerr4930"><i class="fab fa-twitter burger-icon"></i></a>
                     <a href="mailto:berry.julien57@gmail.com" title="Envoyez-moi un e-mail"><i class="far fa-envelope burger-icon"></i></a>
                 </div>
             </nav>
