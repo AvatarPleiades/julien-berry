@@ -126,6 +126,35 @@
     font-size: 16px;
 }
 
+/* Bouton d'accès au site */
+
+.site-button {
+    text-align: center;
+}
+
+.button-site {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #4F518C;
+    color: #ffffff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+  
+.button-site:hover {
+    color:#ffffff;
+    scale: 1.1;
+}
+
+.button-site:visited {
+    color: #ffffff;
+}
+
+
 @media (max-width: 768px) {
     .container-img {
         flex-direction: column;

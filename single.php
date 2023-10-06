@@ -7,6 +7,8 @@
     $details = get_field('details'); 
     $processus = get_field('processus');
     $num = get_field('num');
+    $titre_site = get_field('titre_site');
+    $lien_site = get_field('lien_site');
     $titre_github = get_field('titre_github');
     $lien_github = get_field('lien_github');
     $titre_maquette = get_field('titre_maquette');
@@ -61,7 +63,11 @@
     $project_num = get_field('num');
     if ($project_num <= 13) :
     ?>
-        <p class="text-align">Projet <?php echo $project_num; ?> de la formation "Développeur WordPress" d'OpenClassrooms</p>
+    <p class="text-align">Projet <?php echo $project_num; ?> de la formation "Développeur WordPress" d'OpenClassrooms</p>
+    <?php else : ?>
+        <div class="site-button">
+            <a href="<?php echo esc_url($lien_site); ?>" class="button-site"><?php echo esc_html($titre_site); ?></a>
+        </div>
     <?php endif; ?>
     <div class="container-details-process">
         <div class="project-details">
