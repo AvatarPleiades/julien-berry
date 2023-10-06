@@ -69,24 +69,13 @@ $url = get_permalink();
                     <h3 class="text-align margin-bottom"><?php echo get_field('projet') ?></h3>
                     <p class="margin-bottom"><?php echo get_field('apercu') ?></p>
                     <div class="languages-list margin-bottom">
-                        <?php
-                        if ($wordpress) {
-                            echo '<img src="' . esc_url($wordpress) . '" alt="Fait sur WordPress" title="Fait sur WordPress">';
-                        }
-                        if ($html) {
-                            echo '<img src="' . esc_url($html) . '" alt="Codé avec HTML5" title="Codé avec HTML5">';
-                        }
-                        if ($css) {
-                            echo '<img src="' . esc_url($css) . '" alt="Codé avec CSS3" title="Codé avec CSS3">';
-                        }
-                        if ($javascript) {
-                            echo '<img src="' . esc_url($javascript) . '" alt="Codé avec JavaScript" title="Codé avec JavaScript">';
-                        }
-                        if ($php) {
-                            echo '<img src="' . esc_url($php) . '" alt="Codé avec PHP8" title="Codé avec PHP8">';
-                        }
-                        if ($bootstrap) {
-                            echo '<img src="' . esc_url($bootstrap) . '" alt="Utilisation de Bootstrap" title="Utilisation de Bootstrap">';
+                    <?php
+                        $langages = array('wordpress', 'html', 'css', 'javascript', 'php', 'bootstrap');
+                        foreach ($langages as $langage) {
+                            $langage_url = get_field($langage);
+                            if ($langage_url) {
+                                echo '<img src="' . esc_url($langage_url) . '" alt="' . esc_attr($langage) . '" title="' . esc_attr($langage) . '">';
+                            }
                         }
                         ?>
                     </div>
