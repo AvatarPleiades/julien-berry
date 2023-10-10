@@ -80,6 +80,28 @@
     color:#4F518C;
 }
 
+/* Texte maquette/certificat/repo */
+
+.maquette-cert span::before {
+    content: "Maquette";
+    animation: animatewords 8s infinite;
+}
+
+@keyframes animatewords {
+    0%{
+        content:"Maquette";
+    }
+    25%{
+        content:"Prototype";
+    }    
+    50%{
+        content:"Certificats";
+    }    
+    75%{
+        content:"Repository GitHub";
+    }
+}
+
 /* Navigation bas de page */
 
 .project-navigation {
@@ -115,10 +137,6 @@
 .project-link {
     text-align: left;
     font-size: 16px;
-}
-
-.project-link:hover, .project-link-right:hover {
-    transform: scale(1.1);
 }
 
 .project-link-right {

@@ -86,7 +86,7 @@
     </div>
     <div class="container-maquette-languages">
         <div class="maquette-cert">
-            <h2 class="second-title">Maquettes et certificats</h2>
+            <h2 class="second-title"><span></span></h2>
             <div class="paragraph-content">
                 <a href="<?php echo ($lien_github) ?>" alt="<?php echo $titre_github ?>" title="<?php echo $titre_github ?>" target="_blank"><p class="text-align size"><?php echo $titre_github ?></p></a>                
                 <a href="<?php echo ($maquette_url) ?>" alt="<?php echo $titre_maquette ?>" title="<?php echo $titre_maquette ?>" target="_blank"><p class="text-align size"><?php echo $titre_maquette ?></p></a>
