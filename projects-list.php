@@ -35,13 +35,13 @@ $url = get_permalink();
         <p class="text-align margin-bottom">Retrouvez sur cette page tous les projets sur lesquels j'ai travaillé.</p>
     </div>
     <div class="filter-buttons">
-        <button data-filter="all">Tous</button>
-        <button data-filter="html">HTML</button>
-        <button data-filter="css">CSS</button>
-        <button data-filter="javascript">JavaScript</button>
-        <button data-filter="php">PHP</button>
-        <button data-filter="wordpress">WordPress</button>
-        <button data-filter="bootstrap">Bootstrap</button>
+        <button data-filter="all" onclick="filterSelection(this)">Tous</button>
+        <button data-filter="html" onclick="filterSelection(this)">HTML</button>
+        <button data-filter="css" onclick="filterSelection(this)">CSS</button>
+        <button data-filter="javascript" onclick="filterSelection(this)">JavaScript</button>
+        <button data-filter="php" onclick="filterSelection(this)">PHP</button>
+        <button data-filter="wordpress" onclick="filterSelection(this)">WordPress</button>
+        <button data-filter="bootstrap" onclick="filterSelection(this)">Bootstrap</button>
     </div>
     <div class="projects-grid">
         <?php 

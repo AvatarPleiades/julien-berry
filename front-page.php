@@ -57,7 +57,7 @@
         <h1 class="first-title fancy">Mon Portfolio</h1>
         <div data-aos="zoom-in-up" data-aos-duration="750" data-aos-offset="200" data-aos-easing="ease-in-sine" class="container-projects">
             <h2 class="second-title">Les Projets OpenClassrooms</h2>
-            <p>Retrouvez dans ce slider tous les projets réalisés lors de la formation de Développeur WordPress chez OpenClassrooms.</p>
+            <p>Retrouvez dans ce slider tous les projets réalisés lors de la formation de Développeur WordPress chez OpenClassrooms ainsi que d'autres projets personnels.</p>
             <?php get_template_part('/templates-part/swiper-project'); ?>
             <div>
                 <button class="all-projects type margin-bottom">

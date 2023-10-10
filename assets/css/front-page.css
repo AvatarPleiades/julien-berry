@@ -677,7 +677,7 @@ button.all-projects {
 }
 
 .form input[type="Submit"]:hover {
-  scale: 1.1;
+  transform: scale(1.1);
 }
 
 /* Separation titre */
@@ -733,7 +733,7 @@ button.all-projects {
 }
 
 .bottom-icon:hover {
-  scale: 1.2;
+  transform: scale(1.2);
 }
 
 /* Media Queries */

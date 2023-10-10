@@ -28,6 +28,7 @@
 
 .project-block:hover {
     animation: shrink-expand 2s infinite;
+    border: 3px dashed #4F518C;
 }
 
 @keyframes shrink-expand {
@@ -85,7 +86,12 @@
     background-color: #fff;
     color: #4F518C;
 }
+.filter-buttons button.selected {
+    background-color: #fff;
+    color: #4F518C;
+    border: 1px dashed #4F518C;
 
+}
 
 @media (max-width: 768px) {
     .container-list p {

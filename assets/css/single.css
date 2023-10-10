@@ -49,7 +49,7 @@
 }
 
 .project-details:hover, .project-process:hover, .maquette-cert:hover, .languages-used:hover {
-    scale: 1.01;
+    border: 2px dashed #4F518C;
 }
 
 .maquette-cert, .languages-used {
@@ -118,7 +118,7 @@
 }
 
 .project-link:hover, .project-link-right:hover {
-    scale: 1.1;
+    transform: scale(1.1);
 }
 
 .project-link-right {
@@ -147,7 +147,7 @@
   
 .button-site:hover {
     color:#ffffff;
-    scale: 1.1;
+    transform: scale(1.1);
 }
 
 .button-site:visited {
