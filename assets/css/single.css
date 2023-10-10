@@ -159,13 +159,21 @@
     background-color: #4F518C;
     color: #ffffff;
     border-radius: 5px;
+    border: 2px dashed #4F518C;
     text-transform: uppercase;
+    font-family: 'Montserrat-Regular';
     transition: background-color 0.3s ease;
 }
   
 .button-site:hover {
-    color:#ffffff;
-    transform: scale(1.1);
+    background-color: #ffffff;
+    color:#4F518C;
+    border: 2px dashed #4F518C;
+    font-weight: bold;
+}
+
+.button-site:hover:visited {
+    color: #4F518C;
 }
 
 .button-site:visited {
