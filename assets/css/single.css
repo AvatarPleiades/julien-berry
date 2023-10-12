@@ -107,10 +107,10 @@
 .project-navigation {
     display: flex;
     justify-content: center;
-    margin: 2vh 0 4vh 0;
+    margin: 2vh 0 4vh;
 }
 
-.project-navigation-link {
+.project-navigation-link, .return-projects {
     text-decoration: none;
     margin: 0 10px;
     color: #4F518C;
@@ -142,6 +142,20 @@
 .project-link-right {
     text-align: right;
     font-size: 16px;
+}
+
+.return-projects {
+    display: flex;
+    justify-content: center;
+    margin: 2vh 0 4vh 0;
+}
+
+.return-projects h3:hover {
+    border-bottom: 2px dashed;
+}
+
+.return-projects a {
+    text-decoration: none;
 }
 
 /* Bouton d'accès au site */

@@ -7,6 +7,26 @@
     font-size: 18px;
 }
 
+.subtitle span::before {
+    content: "HTML";
+    animation: animatelang 8s infinite;
+}
+
+@keyframes animatelang {
+    0%{
+        content:"HTML";
+    }
+    25%{
+        content:"CSS";
+    }    
+    50%{
+        content:"PHP";
+    }    
+    75%{
+        content:"JavaScript";
+    }
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

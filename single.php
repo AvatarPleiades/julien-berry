@@ -154,6 +154,9 @@
             </a>
         <?php endif; ?>
     </div>
+    <div class="return-projects">
+        <a href="https://portfolio.julien-berry.fr/tous-les-projets/"><h3>Retour aux projets</h3></a>
+    </div>
     <?php get_template_part('/templates-part/social-icon'); ?>
 </div>
 

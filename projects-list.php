@@ -28,11 +28,12 @@ $url = get_permalink();
 
 <div class="container-list">
     <div class="title-description">
-        <h1>Tous les projets</h1>
+        <h1>Portfolio: Découvrez Mes Projets</h1>
         <h3 class="second-title margin-bottom"><?php echo $name ?></h2>
     </div>
     <div class="subtitle">
-        <p class="text-align margin-bottom">Retrouvez sur cette page tous les projets sur lesquels j'ai travaillé.</p>
+        <p class="text-align">Bienvenue sur la page regroupant l'ensemble de mes projets, qu'ils soient personnels ou ceux de la formation d'OpenClassrooms.</p>
+        <p class="text-align margin-bottom">Explorez cette collection variée, filtrée par langage, pour découvrir mes compétences en <span></span>, WordPress et Bootstrap.</p> 
     </div>
     <div class="filter-buttons">
         <button data-filter="all" onclick="filterSelection(this)">Tous</button>
