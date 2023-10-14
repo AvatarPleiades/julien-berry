@@ -21,7 +21,7 @@
             <p>Suite à l'obtention de mon BAC STI Génie Électronique en 2012, je décide de commencer à travailler pour être indépendant.</p>
             <p class="margin-bottom">C'est ainsi que je vis mon premier contact avec le monde professionnel, passant de manutentionnaire/livreur à Guichetier pour répondre aux besoins des entreprises.</p>
             <p>Suite à cela, je décide avec un ami de prendre quelques mois pour parcourir la France à pied avec une charrette à la rencontre de projets et d'entreprises écologiques/alternatives/éthiques.</p>
-            <p>Dans le but des les interviewer et ainsi comprendre leur démarche et les partager au plus grand nombre à travers notre page l'Éveil Nomade sur <a href="https://www.facebook.com/eveilnomade" title="Page Facebook de l'Éveil Nomade" alt="Facebook de l'Éveil Nomade" target="_blank"><i class="fas fa-link link-deco"></i> Facebook</a>.</p>
+            <p>Dans le but de les interviewer et ainsi comprendre leur démarche et les partager au plus grand nombre à travers notre page l'Éveil Nomade sur <a href="https://www.facebook.com/eveilnomade" title="Page Facebook de l'Éveil Nomade" alt="Facebook de l'Éveil Nomade" target="_blank"><i class="fas fa-link link-deco"></i> Facebook</a>.</p>
             <p>Au passage, nous ramasserons au moins 1 sac de déchets par jour au bord des routes.</p>
             <?php get_template_part('/templates-part/image-slider'); ?>
             <p>Cette aventure renforça mon lien avec la nature et ma foi en l'humanité.</p>

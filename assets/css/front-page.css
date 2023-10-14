@@ -680,6 +680,12 @@ button.all-projects {
   transform: scale(1.1);
 }
 
+.wpcf7 form.invalid .wpcf7-response-output {
+  border-color: #4F518C;
+  color: #4F518C;
+  width: 35vw;
+}
+
 /* Separation titre */
 .fancy {
   --c: #4F518C;
