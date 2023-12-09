@@ -11,7 +11,7 @@
                         <p class="white">Mes différents réseaux</p>
                         <div class="icon-group">
                             <a href="https://www.linkedin.com/in/julien-berry-dev-wordpress" aria-label="LinkedIn de Julien Berry" title="LinkedIn de Julien Berry" alt="LinkedIn de Julien Berry"><i class="fab fa-linkedin-in fa-icon"></i></a>
-                            <a href="https://github.com/AvatarPleiades" aria-label="GitHub de Julien Berry" title="GitHub de Julien Berry" alt="GitHub de Julien Berry" target="_blank"><i class="fab fa-github fa-icon"></i></a>
+                            <a href="https://github.com/JulienBerry" aria-label="GitHub de Julien Berry" title="GitHub de Julien Berry" alt="GitHub de Julien Berry" target="_blank"><i class="fab fa-github fa-icon"></i></a>
                         </div>
                         <div class="icon-group">
                             <a href="https://twitter.com/JulienBerr4930" aria-label="X de Julien Berry" title="X de Julien Berry" alt="X de Julien Berry"><i class="fab fa-twitter fa-icon"></i></a>

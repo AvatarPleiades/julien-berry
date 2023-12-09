@@ -28,7 +28,7 @@ $url = get_permalink();
 
 <div class="container-list">
     <div class="title-description">
-        <h1>Portfolio: Découvrez Mes Projets</h1>
+        <h1>Portfolio</h1>
         <h3 class="second-title margin-bottom"><?php echo $name ?></h2>
     </div>
     <div class="subtitle">
